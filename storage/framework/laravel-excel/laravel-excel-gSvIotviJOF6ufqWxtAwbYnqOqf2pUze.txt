@@ -1,0 +1,7 @@
+"team_id","name","phone","email","sticky_phone_number_id","address","column_a","column_b"
+55,"Tonatiuh Flores Castelán",6666666666,"tona@gmail.com",909,"CDMX","lorem ipsum","lorem ipsum"
+66,"John Doe",1111111111,"john@doe.com",808,"DOE","lorem ipsum","lorem ipsum"
+77,"Taylor Otwell",2222222222,"taylor@laravel.com",707,"USA","lorem ipsum","lorem ipsum"
+88,"Mark Zuckerberg",3333333333,"mark@facebook.com",606,"VALLEY","lorem ipsum","lorem ipsum"
+99,"Fabien Potencier",8888888888,"fabien@symfony.com",505,"USA","lorem ipsum","lorem ipsum"
+111,"Evan You",9999999999,"evan@vuejs.com",404,"CDN","lorem ipsum","lorem ipsum"

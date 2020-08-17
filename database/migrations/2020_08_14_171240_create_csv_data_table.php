@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateContactsTable extends Migration
+class CreateCsvDataTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateContactsTable extends Migration
      */
     public function up()
     {
-        Schema::create('contacts', function (Blueprint $table) {
+        Schema::create('csv_data', function (Blueprint $table) {
             $table->id();
-            $table->integer('team_id');
-            $table->char('name');
-            $table->char('phone');
-            $table->char('email');
-            $table->integer('sticky_phone_number_id');
+            $table->string('csv_filename');
+            $table->string('csv_headers');
+            $table->string('csv_custom_headers');
+            $table->longText('csv_data');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreateContactsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contacts');
+        Schema::dropIfExists('csv_data');
     }
 }

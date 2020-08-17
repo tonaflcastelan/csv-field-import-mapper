@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/import', 'ImportController@index');
+Route::post('/imports', 'ImportController@store');
+Route::post('/import-data', 'ImportController@import');
